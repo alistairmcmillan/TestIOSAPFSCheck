@@ -16,6 +16,7 @@
 - (IBAction)runTestButtonPressed:(id)sender {
     
     static long long previousFree = 0;
+    static double previousTimestamp = 0.0f;
     
     if ( previousFree == 0 ) {
         previousFree = [self getFreeDiskspace];
@@ -33,19 +34,28 @@
         NSData *data = [NSData dataWithBytes: d length: 333];
         [data writeToFile: path atomically: YES];
         
+        NSDictionary* attrs = [[NSFileManager defaultManager] attributesOfItemAtPath: path error:nil];
+        NSDate *date = [attrs fileCreationDate];
+        
+        double timestamp = [date timeIntervalSince1970];
+        if ( previousTimestamp == 0 ) {
+            previousTimestamp = timestamp;
+        }
         
         long long space = [self getFreeDiskspace];
         long long diff = space - previousFree;
         
         previousFree = space;
         
-        if ( diff != 0 ) {
+        if ( diff != 0 || timestamp != previousTimestamp ) {
         
-            NSString *log = [NSString stringWithFormat: @"i: %003d %lld available: %lld (diff %lld)", i, (long long) ([NSDate timeIntervalSinceReferenceDate] * 1000 ), space, diff ];
+            NSString *log = [NSString stringWithFormat: @"i: %003d space diff %lld time diff: %f", i, diff, (float) (timestamp - previousTimestamp) ];
 
             NSLog( @"%@", log );
             self.textView.text = [self.textView.text stringByAppendingString: [NSString stringWithFormat: @"%@\n", log]];
         }
+        
+        previousTimestamp = timestamp;
     }
 }
 
