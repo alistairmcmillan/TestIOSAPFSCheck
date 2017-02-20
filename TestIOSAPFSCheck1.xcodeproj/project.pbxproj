@@ -110,6 +110,7 @@
 				TargetAttributes = {
 					F827D3C61E5B71A5002FD3D8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WN338G3KTN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WN338G3KTN;
 				INFOPLIST_FILE = TestIOSAPFSCheck1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.catnapgames.TestIOSAPFSCheck1;
@@ -281,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WN338G3KTN;
 				INFOPLIST_FILE = TestIOSAPFSCheck1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.catnapgames.TestIOSAPFSCheck1;
@@ -307,6 +310,7 @@
 				F827D3E01E5B71A5002FD3D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
