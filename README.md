@@ -15,12 +15,12 @@ So the 2nd attempt seems to have some results. I got sub-second timestamp diff o
 
 ### iPad Air 2 iOS 9
 
-![iPad Air 2 iOS 9](Screenshots/IMG_0099 iPad Air 2 ios 9.PNG)
+![iPad Air 2 iOS 9](Screenshots/IMG_0099%20iPad%20Air%202%20ios%209.PNG)
 
 ### iPad Pro iOS 10.3 beta
 
-![iPad Pro iOS 10.3 beta](Screenshots/IMG_0916 ipad pro ios 10.3 beta.PNG)
+![iPad Pro iOS 10.3 beta](Screenshots/IMG_0916%20ipad%20pro%20ios%2010.3%20beta.PNG)
 
 ### iPhone 5 iOS 10.3 beta
 
-![iPhone 5 iOS 10.3 beta](Screenshots/IMG_5809 iPhone 5 ios 10.3 beta.PNG)
+![iPhone 5 iOS 10.3 beta](Screenshots/IMG_5809%20iPhone%205%20ios%2010.3%20beta.PNG)
